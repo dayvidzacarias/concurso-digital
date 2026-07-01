@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Cidadania Digital: IA e Desinformação</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <h1>Cidadania Digital</h1>
+            <button id="theme-toggle" class="btn-toggle" aria-label="Alternar modo escuro">🌓 Modo Escuro</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção 1: Introdução Conceitual -->
+        <section class="hero-section">
+            <h2>O Impacto das Deepfakes na Sociedade</h2>
+            <p>A Inteligência Artificial avançou rapidamente. Hoje, vídeos e áudios falsos parecem reais. Compreender essa tecnologia é o primeiro passo para exercer sua cidadania digital e proteger a verdade.</p>
+        </section>
+
+        <!-- Seção 2: Guia de Identificação -->
+        <section class="guide-section">
+            <h2>Como Identificar uma Deepfake?</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Piscar de Olhos</h3>
+                    <p>Muitas IA falham em reproduzir o ritmo natural do piscar de olhos humano.</p>
+                </div>
+                <div class="card">
+                    <h3>Sincronia do Áudio</h3>
+                    <p>Preste atenção se o movimento dos lábios condiz exatamente com o som emitido.</p>
+                </div>
+                <div class="card">
+                    <h3>Falhas nas Bordas</h3>
+                    <p>Desfocados estranhos perto das orelhas, cabelos e pescoço indicam manipulação.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Quiz Interativo (Atendendo aos requisitos do DOM e Form) -->
+        <section class="quiz-section">
+            <h2>Quiz Anti-Desinformação</h2>
+            <p>Selecione a alternativa correta e teste seus conhecimentos sobre mídias manipuladas.</p>
+            
+            <form id="quiz-form">
+                <div class="form-group">
+                    <label class="question-label">1. Se você receber um vídeo bombástico de um político, qual deve ser sua primeira ação?</label>
+                    
+                    <div class="radio-option">
+                        <input type="radio" id="opt1" name="quiz-q1" value="errado1">
+                        <label for="opt1">Compartilhar imediatamente nos grupos de família.</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="opt2" name="quiz-q1" value="correto">
+                        <label for="opt2">Verificar se veículos de imprensa confiáveis publicaram o fato.</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="opt3" name="quiz-q1" value="errado2">
+                        <label for="opt3">Acreditar cegamente, pois vídeos não podem ser editados.</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Verificar Resposta</button>
+            </form>
+
+            <!-- Div manipulada dinamicamente pelo JS para exibir o feedback -->
+            <div id="quiz-feedback" class="feedback-box hidden"></div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Projeto Cidadania Digital. Desenvolvido para fins educacionais.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
